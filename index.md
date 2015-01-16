@@ -1,9 +1,8 @@
 ---
-title: Using ImpressJS with Slidify
-author: Ramnath Vaidyanathan
+title: Changing the world with ImpressJS and Slidify
+author: Elliott Brannon
 mode  : selfcontained
 framework: impressjs
-
 
 --- .slide x:-1000 y:-1500
 
