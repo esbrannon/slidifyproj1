@@ -1,0 +1,39 @@
+---
+title: Using ImpressJS with Slidify
+author: Ramnath Vaidyanathan
+mode  : selfcontained
+framework: impressjs
+
+
+--- .slide x:-1000 y:-1500
+
+<q>Do you want to **change** the world?</q>
+<br><br><br><br><br><br><br><br><br><br>
+*A presentation by Elliott Brannon*
+
+--- .slide x:0 y:-1500
+
+<q>First you must learn how the world has **changed**</q>
+
+--- .slide x:500 y:-1500 z:-500 rot:0 roty:90
+
+How has the US population changed in recent years?
+
+```{r echo=FALSE}
+data <- read.csv("http://www.census.gov/popest/data/national/totals/2014/files/NST-EST2014-popchg2010_2014.csv")
+data <- data.frame(cbind(2010:2014, t(data[1,7:11])))
+colnames(data) <- c("year","population")
+plot(population ~ year, data=data, main='US Population, 2010 - 2014')
+```
+
+--- #want x:0 y:0 scale:10
+
+Want to know more?
+
+--- #could x:0 y:0 z:-1000 rot:360 scale:.5
+
+To find out you could...
+
+* 1. <a href="http://www.google.com">Search Google</a>
+* 2. <a href="http://www.census.gov">Visit the US Census website</a>
+* 3. <a href="http://esbrannon.shinyapps.io/shinyapp1">Use an interactive data visualization!</a>
